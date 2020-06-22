@@ -1,0 +1,11 @@
+version: "3"
+services:
+  movie-pg:
+    image: postgres:latest
+    container_name: movie-pg
+    ports:
+    - 5422:5432
+    environment:
+      - POSTGRES_USER=tinhvq
+      - POSTGRES_PASSWORD=tinhvq
+      - POSTGRES_DB=movie_service

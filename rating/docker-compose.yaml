@@ -1,0 +1,11 @@
+version: "3"
+services:
+  rating-db:
+    image: postgres:latest
+    container_name: rating-db
+    ports:
+      - 5544:5432
+    environment:
+      - POSTGRES_USER=tinhvq
+      - POSTGRES_PASSWORD=tinhvq
+      - POSTGRES_DB=rating
